@@ -1,0 +1,115 @@
+section{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.proyecto{
+    position: relative;
+    width : 600px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.proyecto .circulo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.proyecto .circulo::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.proyecto:hover .circulo::before{
+    background: #0065c3;
+    clip-path: circle(400px at center);
+}
+.proyecto img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.proyecto:hover img{
+    left: 75%;
+    height: 800px;
+}
+.proyecto .contenido{
+    position: relative;
+    width: 50%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.proyecto:hover .contenido{
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+.proyecto .contenido h2{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.proyecto .contenido p{
+    color: azure;
+}
+.proyecto .contenido a{
+    position: relative;
+    color: bisque;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: white;
+    color: black;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+}
+@media (max-width: 900px){
+    .proyecto{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start;
+        margin: 10px;
+    }
+    .proyecto:hover{
+        height: 900px;
+    }
+    .proyecto .contenido{
+        width: 100%;
+        left: 0;
+        padding: 30px;
+    }
+    .proyecto:hover img{
+        top: 70%;
+        left: 50%;
+        height: 320px;
+    }
+}
+@media (max-width: 420px){
+    .proyecto .contenido{
+        padding: 20px;
+    }
+}
