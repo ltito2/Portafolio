@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio LUIS</title>
+</head>
+<body>
+    <nav>
+        <a href="#" class="link logo">CODEA</a>
+        <a href="#" class="link link_activo" id="colaboraciones">Proyectos y Colaboraciones</a>
+        <a href="#" class="link link_activo" id="conocimiento">Conocimiento</a>
+        <a href="#" class="link link_activo" id="contacto">Contacto</a>
+    </nav>
+    <div class="contenedor">
+        <div class="page" id="page">
+            <div class="contenido_animado">
+                <h2>Proyectos y colaboraciones</h2>
+                <p>
+                    Este serra un parrafo
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+        body{
+            height: 100vh;
+            margin: 0;
+            font-family: 'Coda Caption', sans-serif;
+            background: radial-gradient(at top, rgb(93, 154, 158),rgb(72, 133, 184),rgb(3, 99, 209));
+        }
+        nav{
+            margin: 0 auto;
+            width: 1000px;
+            background: rgb(53, 49, 49);
+            border-radius: 0px 0px 20px 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav a{
+            margin-top: 50px;
+            color: white;
+            margin-bottom: 10px;
+            text-decoration: none;
+            font-size: 20px;
+            width: 90%;
+            text-align: center;
+            font-weight: 300;
+        }
+        nav a:nth-child(1), nav a:nth-child(4){
+            border-right: green 1px solid;
+        }
+        .link_activo{
+            color: red;
+        }
+        .logo{
+            font-size: 30px;
+            letter-spacing: 5px;
+        }
+        .contenedor{
+            width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .contenedor .page{
+            width: 100%;
+            height: 50vh;
+            top: 100px;
+            left: 0;
+            background: linear-gradient(15deg, black 90%, white 90%);
+            position: absolute;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.425);
+            border-radius: 20px;
+        }
+        .contenedor .page .contenido{
+            color: white;
+        }
+    </style>
+
+    <script>
+
+    </script>
+</body>
+</html>
