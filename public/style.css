@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: SF Pro Display, sans-serif;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: #0a0a0a;
+}
+.lista{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+}
+.lista a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.lista-item{
+    position: relative;
+    line-height: 2rem;
+    transition-delay: .6s;
+}
+.lista-item::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background-color: #ff0000;
+    box-shadow: 0 0 30px #ff5733,
+                0 0 60px #ff6644,
+                0 0 30px #ff3b3b;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 369ms cubic-bezier(.26,.92,.96,.48);
+}
+.lista-item:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.item-logo{
+    width: 100px;
+    height: 70px;
+    background: url(images/logo_white.svg)no-repeat center;
+}
+
+.redes-sociales{
+    width: 100%;
+    font-size: 10px;
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+    justify-content: space-around;
+}
+.ico{
+    background: #ff0000;
+}
+.facebook{
+    background: url(images/buscar_white.svg)no-repeat top;
+    width: 10px;
+    height: 10px;
+}
+.instagram{
+    background: url(images/buscar_white.svg)no-repeat top;
+    width: 10px;
+    height: 10px;
+}
+.twitter{
+    background: url(images/buscar_white.svg)no-repeat top;
+    width: 10px;
+    height: 10px;
+}
+.linkedin{
+    background: url(images/buscar_white.svg)no-repeat top;
+    width: 10px;
+    height: 10px;
+}
+main{
+    padding: 20px 10px;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+footer{
+    padding: 20px 10px;
+    width: 100%;
+    height: 10vh;
+    background-color: #0a0a0a;
+    position: relative;
+}
