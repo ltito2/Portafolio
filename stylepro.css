@@ -1,9 +1,9 @@
 section{
+    padding-top: 10px;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    align-items: center;  
 }
 .proyecto{
     position: relative;
@@ -44,13 +44,13 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 600px;
+    height: 200px;
     pointer-events: none;
     transition: 0.5s;
 }
 .proyecto:hover img{
     left: 75%;
-    height: 800px;
+    height: 300px;
 }
 .proyecto .contenido{
     position: relative;
@@ -73,6 +73,8 @@ section{
     margin-bottom: 5px;
 }
 .proyecto .contenido p{
+    font-size: 12px;
+    text-align: justify;
     color: azure;
 }
 .proyecto .contenido a{
@@ -85,9 +87,9 @@ section{
     margin-top: 10px;
     display: inline-block;
     text-decoration: none;
-    font-weight: 700;
+    font-size: 12px;
 }
-@media (max-width: 900px){
+/*@media (max-width: 900px){
     .proyecto{
         width: auto;
         max-width: 350px;
@@ -95,7 +97,7 @@ section{
         margin: 10px;
     }
     .proyecto:hover{
-        height: 900px;
+        height: 400px;
     }
     .proyecto .contenido{
         width: 100%;
@@ -104,12 +106,12 @@ section{
     }
     .proyecto:hover img{
         top: 70%;
-        left: 50%;
-        height: 320px;
+        left: 70%;
+        height: 200px;
     }
 }
 @media (max-width: 420px){
     .proyecto .contenido{
         padding: 20px;
     }
-}
+}*/
