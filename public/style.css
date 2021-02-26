@@ -35,10 +35,10 @@ header{
     width: 100%;
     height: 3px;
     border-radius: 5px;
-    background-color: #00b800;
+    background-color: #0f0;
     box-shadow: 0 0 30px #64ff78,
                 0 0 60px #63ff54,
-                0 0 30px #6cff67;
+                0 0 30px #62ff43;
     left: 0;
     bottom: 0;
     transform: scaleX(0);
@@ -57,31 +57,129 @@ header{
 
 .redes-sociales{
     width: 100%;
-    font-size: 10px;
     display: flex;
-    list-style: none;
-    align-items: baseline;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.facebook{
-    background: url(images/facebook_white.svg)no-repeat;
+.redes-sociales .ico{
+    position: relative;
+    margin: 3px;
     width: 30px;
     height: 30px;
+}
+.redes-sociales .ico a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 35px rgba(0,255,0,0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    color: rgb(255,255,255);
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(50px);
+}
+.redes-sociales .ico:hover a{
+    letter-spacing: 3px;
+}
+.redes-sociales .ico a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.15),transparent);
+    transform: skewX(45deg) translateX(0);
+    transition: 0.5s;
+}
+.redes-sociales .ico:hover a::before{
+    transform: skewX(45deg) translateX(200%);
+}
+.redes-sociales .ico::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 1px;
+    height: 10px;
+    background: #ff0;
+    border-radius: 20px;
+    transition: 0s;
+}
+.redes-sociales .ico:hover::before{
+    bottom: 0;
+    width: 90%;
+    height:70%;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.redes-sociales .ico::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -5px;
+    width: 1px;
+    height: 10px;
+    background: #ff0;
+    border-radius: 20px;
+    transition: 0s;
+}
+.redes-sociales .ico:hover::after{
+    top: 0;
+    width: 90%;
+    height:70%;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.redes-sociales .ico:nth-child(1)::before,
+.redes-sociales .ico:nth-child(1)::after{
+    background: #3b5998;
+    box-shadow: 0 0 5px #3b5998,
+                0 0 5px #3b5998,
+                0 0 5px #3b5998;
+}
+.redes-sociales .ico:nth-child(2)::before,
+.redes-sociales .ico:nth-child(2)::after{
+    background: linear-gradient(-45deg, #f58529, #feda77, #dd2a7b, #8134af, #515bd4);
+    box-shadow: 0 0 5px linear-gradient(-45deg,#f58529 , #feda77, #dd2a7b, #8134af, #515bd4),
+                0 0 5px linear-gradient(-45deg,#f58529 , #feda77, #dd2a7b, #8134af, #515bd4),
+                0 0 5px linear-gradient(-45deg,#f58529 , #feda77, #dd2a7b, #8134af, #515bd4);
+}
+.redes-sociales .ico:nth-child(3)::before,
+.redes-sociales .ico:nth-child(3)::after{
+    background: #00acee;
+    box-shadow: 0 0 5px #00acee,
+                0 0 5px #00acee,
+                0 0 5px #00acee;
+}
+.redes-sociales .ico:nth-child(4)::before,
+.redes-sociales .ico:nth-child(4)::after{
+    background: #0e76a8;
+    box-shadow: 0 0 5px #0e76a8,
+                0 0 5px #0e76a8,
+                0 0 5px #0e76a8;
+}
+.facebook {
+    background: url(images/facebook_white.svg)no-repeat center ;
 }
 .instagram{
-    background: url(images/instagram_white.svg)no-repeat;
-    width: 30px;
-    height: 30px;
+    background: url(images/instagram_white.svg)no-repeat center;
 }
 .twitter{
-    background: url(images/twitter_white.svg)no-repeat;
-    width: 30px;
-    height: 30px;
+    background: url(images/twitter_white.svg)no-repeat center;
 }
 .linkedin{
-    background: url(images/linkedin_white.svg)no-repeat;
-    width: 30px;
-    height: 30px;
+    background: url(images/linkedin_white.svg)no-repeat center;
 }
 main{
     padding: 20px 10px;
@@ -92,7 +190,7 @@ main{
 footer{
     padding: 20px 10px;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     background-color: #0a0a0a;
     position: relative;
 }
