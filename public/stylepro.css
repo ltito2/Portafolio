@@ -31,12 +31,12 @@ section{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #d83133;
+    background: #003871;
     clip-path: circle(120px at center);
     transition: 0.5s;
 }
 .proyecto:hover .circulo::before{
-    background: #0065c3;
+    background: #506da6;
     clip-path: circle(400px at center);
 }
 .proyecto img{
@@ -44,7 +44,7 @@ section{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 200px;
+    height: 400px;
     pointer-events: none;
     transition: 0.5s;
 }
@@ -89,7 +89,7 @@ section{
     text-decoration: none;
     font-size: 12px;
 }
-/*@media (max-width: 900px){
+@media (max-width: 900px){
     .proyecto{
         width: auto;
         max-width: 350px;
@@ -105,7 +105,7 @@ section{
         padding: 30px;
     }
     .proyecto:hover img{
-        top: 70%;
+        top: 80%;
         left: 70%;
         height: 200px;
     }
@@ -114,4 +114,4 @@ section{
     .proyecto .contenido{
         padding: 20px;
     }
-}*/
+}

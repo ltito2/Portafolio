@@ -19,8 +19,8 @@ section{
    width: 150px;
    height: 200px;
    margin: 10px;
-   box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
-   background: rgba(81, 113, 148,0.1);
+   box-shadow: 20px 20px 50px rgba(0,0,0,0.9);
+   background: rgba(81, 113, 148,0.5);
    border-radius: 15px;
    border-top: 1px solid rgba(255,255,255,0.5);
    border-left: 1px solid rgba(255,255,255,0.5);
@@ -54,7 +54,6 @@ section{
     transform-style: preserve-3d;
     transform: translate3d(-50%,0,75px);
     color: #000;
-    background: #333;
     padding: 10px 25px;
     border-radius: 30px;
     text-decoration: none;
@@ -74,7 +73,6 @@ section{
     height: 100px;
     border-radius: 50%;
     transition: 0.5s;
-    background: rgb(0, 247, 193);
     transform-style: preserve-3d;
     z-index: 10;
     opacity: 1;
@@ -121,4 +119,20 @@ section{
 .lenguajes .box:nth-child(7) .circle,
 .lenguajes .box:nth-child(7) .visit{
     background: rgb(73, 137, 248);
+}
+.lenguajes .box:nth-child(8) .circle,
+.lenguajes .box:nth-child(8) .visit{
+    background: rgb(227, 7, 19);
+}
+.lenguajes .box:nth-child(9) .circle,
+.lenguajes .box:nth-child(9) .visit{
+    background: rgb(225, 110, 18);
+}
+.lenguajes .box:nth-child(10) .circle,
+.lenguajes .box:nth-child(10) .visit{
+    background: rgb(0, 30, 54);
+}
+.lenguajes .box:nth-child(11) .circle,
+.lenguajes .box:nth-child(11) .visit{
+    background: rgb(54, 1, 0);
 }

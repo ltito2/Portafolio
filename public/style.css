@@ -109,9 +109,8 @@ header{
     left: 50%;
     transform: translateX(-50%);
     bottom: -5px;
-    width: 1px;
+    width: 0px;
     height: 10px;
-    background: #ff0;
     border-radius: 20px;
     transition: 0s;
 }
@@ -128,7 +127,7 @@ header{
     left: 50%;
     transform: translateX(-50%);
     top: -5px;
-    width: 1px;
+    width: 0px;
     height: 10px;
     background: #ff0;
     border-radius: 20px;
@@ -151,9 +150,10 @@ header{
 .redes-sociales .ico:nth-child(2)::before,
 .redes-sociales .ico:nth-child(2)::after{
     background: linear-gradient(-45deg, #f58529, #feda77, #dd2a7b, #8134af, #515bd4);
-    box-shadow: 0 0 5px linear-gradient(-45deg,#f58529 , #feda77, #dd2a7b, #8134af, #515bd4),
-                0 0 5px linear-gradient(-45deg,#f58529 , #feda77, #dd2a7b, #8134af, #515bd4),
-                0 0 5px linear-gradient(-45deg,#f58529 , #feda77, #dd2a7b, #8134af, #515bd4);
+    box-shadow: 0 0 5px #515bd4,
+                0 0 5px #515bd4,
+                0 0 5px #515bd4;
+                height: 100%;
 }
 .redes-sociales .ico:nth-child(3)::before,
 .redes-sociales .ico:nth-child(3)::after{
