@@ -1,21 +1,27 @@
 section{
-    padding-top: 10px;
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 .proyecto{
-    position: relative;
-    width : 600px;
-    height: 350px;
-    border-radius: 20px;
     display: flex;
+    justify-items: center;
     align-items: center;
     border-radius: 20px;
+    flex-wrap: wrap;
+    width : 1300px;
     transition: 0.5s;
 }
-.proyecto .circulo{
+.proyecto .box{
+    position: relative;
+    border-radius: 20px;
+    margin: 5px 5px 0 0;
+    width: 400px;
+    height: 300px;
+    background: rgba(2,3,4,0.2)
+}
+.box .circulo{
     position: absolute;
     top: 0;
     left: 0;
@@ -24,7 +30,7 @@ section{
     border-radius: 20px;
     overflow: hidden;
 }
-.proyecto .circulo::before{
+.box .circulo::before{
     content: '';
     position: absolute;
     top: 0;
@@ -35,11 +41,11 @@ section{
     clip-path: circle(120px at center);
     transition: 0.5s;
 }
-.proyecto:hover .circulo::before{
+.box:hover .circulo::before{
     background: #506da6;
     clip-path: circle(400px at center);
 }
-.proyecto img{
+.box img{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -48,11 +54,11 @@ section{
     pointer-events: none;
     transition: 0.5s;
 }
-.proyecto:hover img{
+.box:hover img{
     left: 75%;
     height: 300px;
 }
-.proyecto .contenido{
+.box .contenido{
     position: relative;
     width: 50%;
     padding: 20px 20px 20px 40px;
@@ -60,24 +66,24 @@ section{
     opacity: 0;
     visibility: hidden;
 }
-.proyecto:hover .contenido{
+.box:hover .contenido{
     left: 0;
     opacity: 1;
     visibility: visible;
 }
-.proyecto .contenido h2{
+.box .contenido h2{
     color: #fff;
     text-transform: uppercase;
     font-size: 2em;
     line-height: 1em;
     margin-bottom: 5px;
 }
-.proyecto .contenido p{
+.box .contenido p{
     font-size: 12px;
     text-align: justify;
     color: azure;
 }
-.proyecto .contenido a{
+.box .contenido a{
     position: relative;
     color: bisque;
     padding: 10px 20px;
@@ -88,30 +94,4 @@ section{
     display: inline-block;
     text-decoration: none;
     font-size: 12px;
-}
-@media (max-width: 900px){
-    .proyecto{
-        width: auto;
-        max-width: 350px;
-        align-items: flex-start;
-        margin: 10px;
-    }
-    .proyecto:hover{
-        height: 400px;
-    }
-    .proyecto .contenido{
-        width: 100%;
-        left: 0;
-        padding: 30px;
-    }
-    .proyecto:hover img{
-        top: 80%;
-        left: 70%;
-        height: 200px;
-    }
-}
-@media (max-width: 420px){
-    .proyecto .contenido{
-        padding: 20px;
-    }
 }

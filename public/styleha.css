@@ -130,13 +130,13 @@ section{
 }
 .lenguajes .box:nth-child(9) .circle,
 .lenguajes .box:nth-child(9) .visit{
-    background: rgb(225, 110, 18);
+    background: #ffc331;
 }
 .lenguajes .box:nth-child(10) .circle,
 .lenguajes .box:nth-child(10) .visit{
-    background: rgb(0, 30, 54);
+    background: #00aaff;
 }
 .lenguajes .box:nth-child(11) .circle,
 .lenguajes .box:nth-child(11) .visit{
-    background: rgb(54, 1, 0);
+    background: #ff9a00;
 }
