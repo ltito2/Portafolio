@@ -26,6 +26,10 @@ section{
    border-left: 1px solid rgba(255,255,255,0.5);
    transform-style: preserve-3d;
 }
+.circle{
+    background-color: #0f0;
+    border-radius: 10px;
+}
 .lenguajes .box:hover::before,
 .lenguajes .box:hover:after{
     opacity: 0.04;
@@ -65,23 +69,6 @@ section{
     bottom: 10px;
     opacity: 1;
 }
-.lenguajes .box .circle{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    transition: 0.5s;
-    transform-style: preserve-3d;
-    z-index: 10;
-    opacity: 1;
-    transform: translate3d(-50%,-50%,50px);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-}
 .lenguajes .box .lenguaje{
     position: absolute;
     top: 50%;
@@ -96,47 +83,36 @@ section{
 .lenguajes .box:hover .lenguaje{
     transform: translate3d(-50%,-50%,100px);
 }
-.lenguajes .box:nth-child(1) .circle,
 .lenguajes .box:nth-child(1) .visit{
     background: #ec6231;
 }
-.lenguajes .box:nth-child(2) .circle,
 .lenguajes .box:nth-child(2) .visit{
     background: #28a9e0;
 }
-.lenguajes .box:nth-child(3) .circle,
 .lenguajes .box:nth-child(3) .visit{
     background: #efc725;
 }
-.lenguajes .box:nth-child(4) .circle,
 .lenguajes .box:nth-child(4) .visit{
     background: #5382a1;
 }
-.lenguajes .box:nth-child(5) .circle,
 .lenguajes .box:nth-child(5) .visit{
     background: #ffc331;
 }
-.lenguajes .box:nth-child(6) .circle,
 .lenguajes .box:nth-child(6) .visit{
     background: #c3002f;
 }
-.lenguajes .box:nth-child(7) .circle,
 .lenguajes .box:nth-child(7) .visit{
     background: #478aff;
 }
-.lenguajes .box:nth-child(8) .circle,
 .lenguajes .box:nth-child(8) .visit{
     background: #494949;
 }
-.lenguajes .box:nth-child(9) .circle,
 .lenguajes .box:nth-child(9) .visit{
     background: #ffc331;
 }
-.lenguajes .box:nth-child(10) .circle,
 .lenguajes .box:nth-child(10) .visit{
     background: #00aaff;
 }
-.lenguajes .box:nth-child(11) .circle,
 .lenguajes .box:nth-child(11) .visit{
     background: #ff9a00;
 }
